@@ -1,0 +1,9 @@
+authtoken: 1n0vLgi64KbtekOMfJrhu7ZGqdY_2KiomdjE6PWK9PJFvYGwq
+region: eu
+tunnels:
+    ssh:
+      proto: tcp
+      addr:  22
+    grafana:
+      proto: http
+      addr: 3000
