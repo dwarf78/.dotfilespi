@@ -1,5 +1,3 @@
 elpa/
-myinit.el
-projectile-bookmarks.eld
-recentf
+*.el*
 transient/
