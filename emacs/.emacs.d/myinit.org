@@ -347,11 +347,4 @@
     ("C-x g" . magit-status))
    #+END_SRC
 * Manually installed
-** 6502-mode
-   #+BEGIN_SRC emacs-lisp
-  (load "6502-mode")			
-  (require '6502-mode)
-  (add-to-list 'auto-mode-alist '("\\.s65" . 6502-mode))
-   #+END_SRC
-
 
