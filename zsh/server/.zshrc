@@ -1,3 +1,4 @@
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -105,3 +106,6 @@ export ALTERNATE_EDITOR=""
 export EDITOR="emacsclient -t"
 export VISUAL="emacsclient -c -a emacs"
 
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
