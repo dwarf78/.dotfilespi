@@ -114,4 +114,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # My aliases
-alias homeserver="ssh -y pi@192.168.1.16"
+alias homeserver="ssh -y pi@192.168.1.6"
