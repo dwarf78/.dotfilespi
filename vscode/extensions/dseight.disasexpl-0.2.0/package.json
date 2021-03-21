@@ -1,0 +1,79 @@
+{
+	"name": "disasexpl",
+	"displayName": "Disassembly Explorer",
+	"description": "Show disassembly to source relations",
+	"icon": "icon.png",
+	"version": "0.2.0",
+	"publisher": "dseight",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dseight/vscode-disasexpl"
+	},
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:disasexpl.show"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"configuration": [
+			{
+				"title": "Disassembly Explorer",
+				"properties": {
+					"disasexpl.associations": {
+						"type": "object",
+						"default": {
+							"**/*.c": "${fileDirname}/${fileBasenameNoExtension}.S",
+							"**/*.cpp": "${fileDirname}/${fileBasenameNoExtension}.S"
+						},
+						"description": "Where to search disassembly for matching source files",
+						"scope": "resource"
+					},
+					"disasexpl.dimUnusedSourceLines": {
+						"type": "boolean",
+						"default": true,
+						"description": "Dim the lines that was thrown away by compiler",
+						"scope": "resource"
+					},
+					"disasexpl.useBinaryParsing": {
+						"type": "boolean",
+						"default": false,
+						"description": "Parse disassembly as disassembly produced by objdump",
+						"scope": "resource"
+					}
+				}
+			}
+		],
+		"commands": [
+			{
+				"command": "disasexpl.show",
+				"title": "Show",
+				"category": "Disassembly Explorer"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.10.13",
+		"@types/underscore": "^1.10.23",
+		"tslint": "^5.20.1",
+		"typescript": "^3.5.1",
+		"@types/vscode": "^1.23.0"
+	},
+	"__metadata": {
+		"id": "f6657ac9-7ea5-41a8-82b2-8a9c4be240e5",
+		"publisherId": "73d0e7ea-a00e-4093-b1c2-f8ee7d149936",
+		"publisherDisplayName": "dseight"
+	}
+}
