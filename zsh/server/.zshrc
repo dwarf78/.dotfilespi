@@ -107,5 +107,5 @@ export EDITOR="emacsclient -t"
 export VISUAL="emacsclient -c -a emacs"
 
 if [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
+    tmux attach -t pi || tmux new -s pi
 fi
