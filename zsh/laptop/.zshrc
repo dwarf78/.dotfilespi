@@ -117,9 +117,9 @@ unset __conda_setup
 alias homeserver="ssh -y pi@192.168.1.6"
 
 # TMUX
-# if [ -z "$TMUX" ]; then
-#     tmux attach -t razer || tmux new -s razer
-#fi
+if [ -z "$TMUX" ]; then
+    tmux attach -t razer || tmux new -s razer
+fi
 
 
 

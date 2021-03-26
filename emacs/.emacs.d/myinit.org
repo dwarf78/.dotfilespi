@@ -1,4 +1,14 @@
 * UI
+** UTF-8 encoding
+#+BEGIN_SRC emacs-lisp
+  (setq locale-coding-system 'utf-8)
+  (set-terminal-coding-system 'utf-8)
+  (set-keyboard-coding-system 'utf-8)
+  (set-selection-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8)
+
+
+#+END_SRC
 ** frame size 
    #+BEGIN_SRC emacs-lisp
   (when window-system
@@ -7,9 +17,14 @@
    #+END_SRC
 ** time format
    #+BEGIN_SRC emacs-lisp
-      (setq display-time-24hr-format t)
-      (setq display-time-format "%H:%M - %d %B %Y")
+     (setq display-time-24hr-format t)
+     (setq display-time-format "%H:%M - %d %B %Y")
    #+END_SRC
+** ibuffer
+#+BEGIN_SRC emacs-lisp
+  (global-set-key (kbd "C-x b") 'ibuffer)
+
+#+END_SRC
 ** interface tweaks
    #+BEGIN_SRC emacs-lisp
      (display-time)
