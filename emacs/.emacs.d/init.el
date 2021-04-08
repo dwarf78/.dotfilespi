@@ -32,7 +32,7 @@
  '(org-export-backends (quote (ascii beamer html icalendar latex md odt)))
  '(package-selected-packages
    (quote
-    (pyenv-mode virtualenvwrapper lsp-jedi lsp-ui lsp-mode company-jedi company-irony company-c-headers flycheck-clang-analyzer dashboard pretty-mode company-mode yasnippet-snippets use-package spacemacs-theme smartparens org-bullets magit ggtags flycheck counsel beacon ace-window)))
+    (compiler-explorer pyenv-mode virtualenvwrapper lsp-jedi lsp-ui lsp-mode company-jedi company-irony company-c-headers flycheck-clang-analyzer dashboard pretty-mode company-mode yasnippet-snippets use-package spacemacs-theme smartparens org-bullets magit ggtags flycheck counsel beacon ace-window)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

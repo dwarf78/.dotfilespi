@@ -350,6 +350,14 @@
   (ad-activate 'ansi-term)
 
    #+END_SRC
+** compiler explorer
+#+BEGIN_SRC emacs-lisp
+  (use-package compiler-explorer
+    :ensure t
+:init)
+
+#+END_SRC
+
 * Version Control
 ** magit
    #+BEGIN_SRC emacs-lisp
