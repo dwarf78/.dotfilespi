@@ -352,9 +352,10 @@
    #+END_SRC
 ** compiler explorer
 #+BEGIN_SRC emacs-lisp
-  (use-package rmsbolt
-    :ensure t
-:init)
+    (use-package rmsbolt
+      :ensure t
+     :bind ("C-c a" . 'rmsbolt-starter)
+           )
 
 #+END_SRC
 
